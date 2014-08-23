@@ -50,6 +50,7 @@ Template.calendar.events({
 
         $modal.modal('show');
         $modal.find('input[name=date]').val(date);
+        $modal.find('input[name=timezone]').val((new Date()).getTimezoneOffset());
     }
 });
 
